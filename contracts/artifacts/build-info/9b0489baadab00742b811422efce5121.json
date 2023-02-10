@@ -1,0 +1,319 @@
+{
+	"id": "9b0489baadab00742b811422efce5121",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.4.26",
+	"solcLongVersion": "0.4.26+commit.4563c3fc",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/virus.sol": {
+				"content": "pragma solidity ^0.4.19;\r\n\r\ncontract Virus {\r\n    struct Virus {\r\n        \r\n    }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/virus.sol": {
+				"Virus": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/virus.sol\":28:84  contract Virus {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x0\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"contracts/virus.sol\":28:84  contract Virus {\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x0\n  codecopy\n  0x0\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/virus.sol\":28:84  contract Virus {\r... */\n      mstore(0x40, 0x80)\n      0x0\n      dup1\n      revert\n\n    auxdata: 0xa165627a7a7230582058e26cd21a9d3d82915d4d129d36cc60c8f23347ee6aadc41572a30f0e31502a0029\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a7230582058e26cd21a9d3d82915d4d129d36cc60c8f23347ee6aadc41572a30f0e31502a0029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x35 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 PC 0xe2 PUSH13 0xD21A9D3D82915D4D129D36CC60 0xc8 CALLCODE CALLER 0x47 0xee PUSH11 0xADC41572A30F0E31502A00 0x29 ",
+							"sourceMap": "28:56:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:56:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fd00a165627a7a7230582058e26cd21a9d3d82915d4d129d36cc60c8f23347ee6aadc41572a30f0e31502a0029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 PC 0xe2 PUSH13 0xD21A9D3D82915D4D129D36CC60 0xc8 CALLCODE CALLER 0x47 0xee PUSH11 0xADC41572A30F0E31502A00 0x29 ",
+							"sourceMap": "28:56:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "10600",
+								"executionCost": "66",
+								"totalCost": "10666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "POP"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "DUP1"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 84,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a165627a7a7230582058e26cd21a9d3d82915d4d129d36cc60c8f23347ee6aadc41572a30f0e31502a0029",
+									".code": [
+										{
+											"begin": 28,
+											"end": 84,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 28,
+											"end": 84,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 28,
+											"end": 84,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 28,
+											"end": 84,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 28,
+											"end": 84,
+											"name": "DUP1"
+										},
+										{
+											"begin": 28,
+											"end": 84,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/virus.sol\":\"Virus\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/virus.sol\":{\"keccak256\":\"0x53da08e3f0485cbe63e050fafd68755a34be3fbe14ccf967b4ee536bf46387ab\",\"urls\":[\"bzzr://2650e76f37c9a18f6ee022eece4251b759547f557dbd4aad6c7141039f748f00\"]}},\"version\":1}",
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "contracts/virus.sol:4:5: Warning: Defining empty structs is deprecated.\n    struct Virus {\r\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+				"message": "Defining empty structs is deprecated.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 81,
+					"file": "contracts/virus.sol",
+					"start": 50
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/virus.sol:4:5: Warning: This declaration shadows an existing declaration.\n    struct Virus {\r\n    ^ (Relevant source part starts here and spans across multiple lines).\ncontracts/virus.sol:3:1: The shadowed declaration is here:\ncontract Virus {\r\n^ (Relevant source part starts here and spans across multiple lines).\n\n",
+				"message": "This declaration shadows an existing declaration.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 81,
+					"file": "contracts/virus.sol",
+					"start": 50
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/virus.sol": {
+				"ast": {
+					"absolutePath": "contracts/virus.sol",
+					"exportedSymbols": {
+						"Virus": [
+							3
+						]
+					},
+					"id": 4,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.4",
+								".19"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:24:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 3,
+							"linearizedBaseContracts": [
+								3
+							],
+							"name": "Virus",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Virus.Virus",
+									"id": 2,
+									"members": [],
+									"name": "Virus",
+									"nodeType": "StructDefinition",
+									"scope": 3,
+									"src": "50:31:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 4,
+							"src": "28:56:0"
+						}
+					],
+					"src": "0:84:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

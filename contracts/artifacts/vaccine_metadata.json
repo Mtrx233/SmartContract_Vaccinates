@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/vaccineFactory.sol": "vaccine"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/vaccineFactory.sol": {
+			"keccak256": "0x394cbdc5d1d41b7e1f73af49ea58d604e19abc05d217472fbd5f021b86179178",
+			"urls": [
+				"bzz-raw://fa0216f5b9b82789602f038c6eba030ba27129b16e1047d4231da24bb2b95393",
+				"dweb:/ipfs/QmZG73QSG9d7wK3r4hg6MufaTpo6TdoUHsQfjyj6MsNAFa"
+			]
+		}
+	},
+	"version": 1
+}
